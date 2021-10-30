@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         lookVector.z = 0;
         lookVector = Vector3.Normalize(lookVector);
 
-        if (Input.GetAxis("Fire1") == 1 && shootTimer <= 0) {
+        if (Input.GetAxis("Fire1") + Input.GetAxis("Jump") >= 1 && shootTimer <= 0) {
             Debug.Log("banG!");
             GameObject b = Instantiate(bullet, this.transform.position + lookVector, Quaternion.identity);
             b.GetComponent<Rigidbody2D>().velocity = lookVector * speed * 1.5f;
