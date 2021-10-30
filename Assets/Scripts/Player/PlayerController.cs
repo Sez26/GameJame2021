@@ -43,6 +43,15 @@ public class PlayerController : MonoBehaviour
         jumping = true;
     }
 
+    public void Fire() {
+        Debug.Log("banG!");
+        GameObject b = Instantiate(bullet, this.transform.position + lookVector, Quaternion.identity);
+        b.GetComponent<Rigidbody2D>().velocity = lookVector * speed * 1.5f;
+        b.GetComponent<BulletBehaviour>().player = this.gameObject;
+        b.GetComponent<BulletBehaviour>().startingVelocity =  lookVector * speed * 1.5f;
+        shootTimer = shootCooldown;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -51,12 +60,7 @@ public class PlayerController : MonoBehaviour
         lookVector = Vector3.Normalize(lookVector);
 
         if (Input.GetAxis("Fire1") + Input.GetAxis("Jump") >= 1 && shootTimer <= 0) {
-            Debug.Log("banG!");
-            GameObject b = Instantiate(bullet, this.transform.position + lookVector, Quaternion.identity);
-            b.GetComponent<Rigidbody2D>().velocity = lookVector * speed * 1.5f;
-            b.GetComponent<BulletBehaviour>().player = this.gameObject;
-            b.GetComponent<BulletBehaviour>().startingVelocity =  lookVector * speed * 1.5f;
-            shootTimer = shootCooldown;
+            Fire();
         } else if (shootTimer > 0 ) {
             shootTimer -= Time.deltaTime;
         }
