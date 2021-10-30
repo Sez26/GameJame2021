@@ -16,6 +16,12 @@ public class PlayerController : MonoBehaviour
         get { return lookVector; }
     }
 
+
+    public GameObject bullet;
+
+    public float shootCooldown = 5;
+    private float shootTimer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,15 @@ public class PlayerController : MonoBehaviour
         lookVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         lookVector.z = 0;
         lookVector = Vector3.Normalize(lookVector);
+
+        if (Input.GetAxis("Fire1") == 1 && shootTimer <= 0) {
+            Debug.Log("banG!");
+            GameObject b = Instantiate(bullet, this.transform.position + lookVector, Quaternion.identity);
+            b.GetComponent<Rigidbody2D>().velocity = lookVector * speed * 1.5f;
+            shootTimer = shootCooldown;
+        } else if (shootTimer > 0 ) {
+            shootTimer -= Time.deltaTime;
+        }
     }
 
     private void FixedUpdate() {
