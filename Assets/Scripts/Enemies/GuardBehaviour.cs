@@ -12,6 +12,7 @@ public class GuardBehaviour : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private Vector2 lookVector = Vector2.right;
+    public bool turning = true;
 
     // Start is called before the first frame update
     void Start()
@@ -34,13 +35,26 @@ public class GuardBehaviour : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        lookVector = (path[pathIndex] - rb2d.position).normalized;
-
         var move = lookVector * Time.fixedDeltaTime * speed;
+        var target = (path[pathIndex] - rb2d.position).normalized;
 
-        rb2d.MovePosition(rb2d.position + move);
+        if (Vector2.Dot(lookVector, target) > 0.999) {
+            turning = false;
+        } else {
+            turning = true;
+        }
+
+        if (turning) {
+            var target3 = new Vector3(target.x, target.y, 0);
+            var look3 = new Vector3(lookVector.x, lookVector.y, 0);
+            look3 = Vector3.RotateTowards(look3, target3, 0.02f, 0.0f);
+            lookVector = new Vector2(look3.x, look3.y).normalized;
+        } else {
+            rb2d.MovePosition(rb2d.position + move);
+        }
 
         if (this.rb2d.OverlapPoint(path[pathIndex])) {
+            turning = true;
             pathIndex++;
 
             if (pathIndex >= path.Count) {
@@ -51,6 +65,6 @@ public class GuardBehaviour : MonoBehaviour
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, lookVector * 12);
+        Gizmos.DrawRay(transform.position, lookVector * 2);
     }
 }
