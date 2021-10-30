@@ -16,12 +16,31 @@ public class PlayerController : MonoBehaviour
         get { return lookVector; }
     }
 
+
+    public GameObject bullet;
+
+    public float shootCooldown = 5;
+    private float shootTimer = 0;
+
+    private Vector2 jumpTo;
+    private bool jumping;
+
     // Start is called before the first frame update
     void Start()
     {
         rb2d = this.gameObject.AddComponent<Rigidbody2D>();
         rb2d.gravityScale = 0;
         rb2d.freezeRotation = true;
+        rb2d.isKinematic = false;
+        rb2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+    }
+
+    public void JumpTo(Vector2 pos) {
+        jumpTo = pos;
+
+        Debug.Log("JuMP!");
+
+        jumping = true;
     }
 
     // Update is called once per frame
@@ -30,6 +49,17 @@ public class PlayerController : MonoBehaviour
         lookVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         lookVector.z = 0;
         lookVector = Vector3.Normalize(lookVector);
+
+        if (Input.GetAxis("Fire1") == 1 && shootTimer <= 0) {
+            Debug.Log("banG!");
+            GameObject b = Instantiate(bullet, this.transform.position + lookVector, Quaternion.identity);
+            b.GetComponent<Rigidbody2D>().velocity = lookVector * speed * 1.5f;
+            b.GetComponent<BulletBehaviour>().player = this.gameObject;
+            b.GetComponent<BulletBehaviour>().startingVelocity =  lookVector * speed * 1.5f;
+            shootTimer = shootCooldown;
+        } else if (shootTimer > 0 ) {
+            shootTimer -= Time.deltaTime;
+        }
     }
 
     private void FixedUpdate() {
@@ -37,6 +67,11 @@ public class PlayerController : MonoBehaviour
             * speed * Time.fixedDeltaTime;
 
         rb2d.MovePosition(rb2d.position + movementVector);
+
+        if (jumping) {
+            jumping = false;
+            rb2d.MovePosition(jumpTo);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
