@@ -62,6 +62,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f70e985d1fc616041aac18e1a0c55fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1854525149260271019, guid: f25cdffa12e30d541ade910587ba09f2, type: 3}
+  startingVelocity: {x: 0, y: 0}
 --- !u!50 &2290643436292180410
 Rigidbody2D:
   serializedVersion: 4
@@ -81,7 +83,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!1 &2290643436963248662
 GameObject:
