@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
 
     public float cameraLockDistance = 4;
-    public float cameraMoveSpeed = 30;
+    public float cameraMoveSpeed = 10;
 
     private Vector3 prevPos;
 

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 91572656}
   - component: {fileID: 91572658}
   - component: {fileID: 91572657}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Arrow1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 704896099}
   - component: {fileID: 704896101}
   - component: {fileID: 704896100}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Arrow2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -397,7 +397,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   fov: 90
-  rayCount: 60
+  rayCount: 108
   viewDistance: 20
   meshFilter: {fileID: 0}
   isPlayer: 1
