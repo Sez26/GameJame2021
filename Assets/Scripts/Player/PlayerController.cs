@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
         rb2d.freezeRotation = true;
         rb2d.isKinematic = false;
         rb2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+        this.gameObject.tag = "Player";
     }
 
     public void JumpTo(Vector2 pos) {

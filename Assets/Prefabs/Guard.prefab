@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5947781845941238898}
   - component: {fileID: 5947781845941238897}
   - component: {fileID: 5947781845941238899}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Guard
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,6 +50,9 @@ MonoBehaviour:
   - {x: 1.04, y: 8.15}
   pathIndex: 0
   speed: 4
+  viewAngle: 0.785
+  lookDist: 11.99
+  player: {fileID: 0}
 --- !u!61 &5947781845941238899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -86,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5947781847103148444}
   - component: {fileID: 5947781847103148445}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Square
   m_TagString: Enemy
   m_Icon: {fileID: 0}

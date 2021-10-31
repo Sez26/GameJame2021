@@ -12,7 +12,12 @@ public class GuardBehaviour : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private Vector2 lookVector = Vector2.right;
-    public bool turning = true;
+    private bool turning = true;
+
+    public float viewAngle = 0.785f; // 45deg
+    public float lookDist = 5f;
+
+    public GameObject player = null;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +27,10 @@ public class GuardBehaviour : MonoBehaviour
         rb2d = this.gameObject.AddComponent<Rigidbody2D>();
         rb2d.gravityScale = 0;
         rb2d.freezeRotation = true;
-        rb2d.isKinematic = false;
+        rb2d.isKinematic = true;
         rb2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+        player = GameObject.FindGameObjectsWithTag("Player")[0];
 
         this.gameObject.tag = "Enemy";
     }
@@ -31,7 +38,7 @@ public class GuardBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void FixedUpdate() {
@@ -65,6 +72,26 @@ public class GuardBehaviour : MonoBehaviour
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
+        if (Application.isPlaying) {
+            if (CanSee(player)) {
+                Gizmos.color = Color.green;
+            }
+        }
+
         Gizmos.DrawRay(transform.position, lookVector * 2);
+    }
+
+    public bool CanSee(GameObject obj) {
+        var otherPos = obj.GetComponent<Rigidbody2D>().position;
+        var diff = (otherPos - rb2d.position);
+        var cosTheta = Vector2.Dot(diff.normalized, lookVector);
+        if (cosTheta >= Mathf.Cos(viewAngle) && (Vector2.Dot(diff, diff) <= lookDist*lookDist)) {
+            var hit = Physics2D.Raycast(rb2d.position, diff.normalized, lookDist);
+            if (hit.collider.gameObject.tag == "Player") {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
