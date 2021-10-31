@@ -82,6 +82,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) {
         Debug.Log("Hit?");
+        if (other.gameObject.tag == "Enemy") {
+            Application.LoadLevel(Application.loadedLevel);
+        }
     }
 
     private void OnDrawGizmos() {

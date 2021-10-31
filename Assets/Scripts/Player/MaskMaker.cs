@@ -13,11 +13,17 @@ public class MaskMaker : MonoBehaviour
 
     public MeshFilter meshFilter;
 
+    public bool isPlayer = false;
     private PlayerController playerController;
+    private GuardBehaviour guardBehaviour;
 
     // Start is called before the first frame update
     private void Start() {
-        playerController = transform.parent.GetComponent<PlayerController>();
+        if (isPlayer) {
+            playerController = transform.parent.GetComponent<PlayerController>();
+        } else {
+            guardBehaviour = transform.parent.GetComponent<GuardBehaviour>();
+        }
 
         Mesh mesh = new Mesh();
         meshFilter = GetComponent<MeshFilter>();
@@ -36,7 +42,13 @@ public class MaskMaker : MonoBehaviour
         var cosTheta = Mathf.Cos(fov*Mathf.PI/360f);
         var sinTheta = Mathf.Sin(fov*Mathf.PI/360f);
 
-        var curVector = playerController.LookVector;
+        var curVector = Vector3.zero;
+        
+        if (isPlayer) {
+            curVector = playerController.LookVector;
+        } else {
+            curVector = new Vector3(guardBehaviour.lookVector.x, guardBehaviour.lookVector.y, 0);
+        }
         
         Vector2 cur2d = new Vector2(curVector.x * cosTheta - curVector.y * sinTheta,
                                     curVector.x * sinTheta + curVector.y * cosTheta);
