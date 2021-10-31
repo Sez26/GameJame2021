@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 18496992}
   - component: {fileID: 18496991}
   - component: {fileID: 18496990}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall4 (1)
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -461,8 +461,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1790591318}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -480,7 +479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 141493843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +515,7 @@ GameObject:
   - component: {fileID: 147402785}
   - component: {fileID: 147402784}
   - component: {fileID: 147402783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall4 (3)
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -763,7 +762,7 @@ GameObject:
   - component: {fileID: 148595046}
   - component: {fileID: 148595048}
   - component: {fileID: 148595047}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arrow1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -974,7 +973,7 @@ GameObject:
   - component: {fileID: 327604821}
   - component: {fileID: 327604820}
   - component: {fileID: 327604819}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1222,7 +1221,7 @@ GameObject:
   - component: {fileID: 568652377}
   - component: {fileID: 568652376}
   - component: {fileID: 568652375}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1470,7 +1469,7 @@ GameObject:
   - component: {fileID: 636147120}
   - component: {fileID: 636147119}
   - component: {fileID: 636147118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall4
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1718,7 +1717,7 @@ GameObject:
   - component: {fileID: 650139606}
   - component: {fileID: 650139605}
   - component: {fileID: 650139604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2029,7 +2028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 681516797}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Level
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2065,7 +2064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 837384122}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2104,7 +2103,7 @@ GameObject:
   - component: {fileID: 843336820}
   - component: {fileID: 843336819}
   - component: {fileID: 843336818}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2352,7 +2351,7 @@ GameObject:
   - component: {fileID: 945322168}
   - component: {fileID: 945322167}
   - component: {fileID: 945322166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall4
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2600,7 +2599,7 @@ GameObject:
   - component: {fileID: 949143231}
   - component: {fileID: 949143230}
   - component: {fileID: 949143229}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall4 (2)
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2848,7 +2847,7 @@ GameObject:
   - component: {fileID: 1129814853}
   - component: {fileID: 1129814852}
   - component: {fileID: 1129814851}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall4
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3096,7 +3095,7 @@ GameObject:
   - component: {fileID: 1280825701}
   - component: {fileID: 1280825700}
   - component: {fileID: 1280825699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall2Upper
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3482,7 +3481,7 @@ GameObject:
   - component: {fileID: 1589227960}
   - component: {fileID: 1589227959}
   - component: {fileID: 1589227958}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3727,7 +3726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1600918233}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3763,7 +3762,7 @@ GameObject:
   - component: {fileID: 1648581897}
   - component: {fileID: 1648581899}
   - component: {fileID: 1648581898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arrow2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3974,7 +3973,7 @@ GameObject:
   - component: {fileID: 1674648203}
   - component: {fileID: 1674648202}
   - component: {fileID: 1674648201}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall2Lower
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -4222,7 +4221,7 @@ GameObject:
   - component: {fileID: 1768656034}
   - component: {fileID: 1768656033}
   - component: {fileID: 1768656032}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -4458,85 +4457,6 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: 3.1283064, y: -4.97498, z: 0}
     m_Extent: {x: 13.232691, y: 5.337938, z: 0}
---- !u!1 &1790591317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1790591318}
-  - component: {fileID: 1790591320}
-  - component: {fileID: 1790591319}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1790591318
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790591317}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 55867833}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 174}
-  m_SizeDelta: {x: 380, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1790591319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790591317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9960785, g: 0.9960785, b: 0.9960785, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Press SHIFT to run. Be careful not to alert the guards or they will attack!
---- !u!222 &1790591320
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790591317}
-  m_CullTransparentMesh: 1
 --- !u!1 &1797396736
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,7 +4466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797396737}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4582,7 +4502,7 @@ GameObject:
   - component: {fileID: 1867137508}
   - component: {fileID: 1867137507}
   - component: {fileID: 1867137506}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -4830,7 +4750,7 @@ GameObject:
   - component: {fileID: 2101728184}
   - component: {fileID: 2101728183}
   - component: {fileID: 2101728182}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall3
   m_TagString: Level
   m_Icon: {fileID: 0}

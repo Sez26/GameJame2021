@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33125911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 37028431}
   - component: {fileID: 37028430}
   - component: {fileID: 37028429}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall5
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 365403942}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 549314344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Level
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 796988163}
   - component: {fileID: 796988162}
   - component: {fileID: 796988161}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall4
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 1005620553}
   - component: {fileID: 1005620552}
   - component: {fileID: 1005620551}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1035,7 +1035,7 @@ GameObject:
   - component: {fileID: 1033450153}
   - component: {fileID: 1033450155}
   - component: {fileID: 1033450154}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Isometric Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 1034863744}
   - component: {fileID: 1034863743}
   - component: {fileID: 1034863742}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1466,7 +1466,7 @@ GameObject:
   - component: {fileID: 1129995607}
   - component: {fileID: 1129995606}
   - component: {fileID: 1129995605}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1786,7 +1786,7 @@ GameObject:
   - component: {fileID: 1219700578}
   - component: {fileID: 1219700580}
   - component: {fileID: 1219700579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Isometric Diamond (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1900,7 +1900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1241757817}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1938,7 +1938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1366940418}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1976,7 +1976,7 @@ GameObject:
   - component: {fileID: 1371595912}
   - component: {fileID: 1371595911}
   - component: {fileID: 1371595910}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall4
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2224,7 +2224,7 @@ GameObject:
   - component: {fileID: 1434312730}
   - component: {fileID: 1434312729}
   - component: {fileID: 1434312728}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall4
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2472,7 +2472,7 @@ GameObject:
   - component: {fileID: 1463690661}
   - component: {fileID: 1463690660}
   - component: {fileID: 1463690659}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall2Lower
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2720,7 +2720,7 @@ GameObject:
   - component: {fileID: 1581181278}
   - component: {fileID: 1581181277}
   - component: {fileID: 1581181276}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2968,7 +2968,7 @@ GameObject:
   - component: {fileID: 1843865558}
   - component: {fileID: 1843865557}
   - component: {fileID: 1843865556}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3215,7 +3215,7 @@ GameObject:
   - component: {fileID: 1856365672}
   - component: {fileID: 1856365674}
   - component: {fileID: 1856365673}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 9-Sliced (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3340,7 +3340,7 @@ GameObject:
   - component: {fileID: 1872698796}
   - component: {fileID: 1872698798}
   - component: {fileID: 1872698797}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Isometric Diamond (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3456,7 +3456,7 @@ GameObject:
   - component: {fileID: 1987934429}
   - component: {fileID: 1987934431}
   - component: {fileID: 1987934430}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Isometric Diamond (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3573,7 +3573,7 @@ GameObject:
   - component: {fileID: 2026571587}
   - component: {fileID: 2026571586}
   - component: {fileID: 2026571585}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall1 (1)
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3820,7 +3820,7 @@ GameObject:
   - component: {fileID: 2052135371}
   - component: {fileID: 2052135373}
   - component: {fileID: 2052135372}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 9-Sliced
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3946,7 +3946,7 @@ GameObject:
   - component: {fileID: 2058648450}
   - component: {fileID: 2058648449}
   - component: {fileID: 2058648448}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall4
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -4194,7 +4194,7 @@ GameObject:
   - component: {fileID: 2081240638}
   - component: {fileID: 2081240637}
   - component: {fileID: 2081240636}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall3
   m_TagString: Level
   m_Icon: {fileID: 0}

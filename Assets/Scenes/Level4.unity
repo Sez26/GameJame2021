@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 112838880}
   - component: {fileID: 112838881}
   - component: {fileID: 112838882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 226836600}
   - component: {fileID: 226836601}
   - component: {fileID: 226836602}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 381592698}
   - component: {fileID: 381592697}
   - component: {fileID: 381592696}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall3Lower
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 419172403}
   - component: {fileID: 419172402}
   - component: {fileID: 419172401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obstacle2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 724639118}
   - component: {fileID: 724639119}
   - component: {fileID: 724639120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1035,7 +1035,7 @@ GameObject:
   - component: {fileID: 755679182}
   - component: {fileID: 755679183}
   - component: {fileID: 755679184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 762801367}
   - component: {fileID: 762801366}
   - component: {fileID: 762801365}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obstacle1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1400,7 +1400,7 @@ GameObject:
   - component: {fileID: 818640041}
   - component: {fileID: 818640040}
   - component: {fileID: 818640039}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1647,7 +1647,7 @@ GameObject:
   - component: {fileID: 843681305}
   - component: {fileID: 843681306}
   - component: {fileID: 843681307}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1761,7 +1761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986580341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Level
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1875,7 +1875,7 @@ GameObject:
   - component: {fileID: 1189428421}
   - component: {fileID: 1189428420}
   - component: {fileID: 1189428419}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2123,7 +2123,7 @@ GameObject:
   - component: {fileID: 1211155904}
   - component: {fileID: 1211155903}
   - component: {fileID: 1211155902}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2370,7 +2370,7 @@ GameObject:
   - component: {fileID: 1319006261}
   - component: {fileID: 1319006262}
   - component: {fileID: 1319006263}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2486,7 +2486,7 @@ GameObject:
   - component: {fileID: 1352266575}
   - component: {fileID: 1352266577}
   - component: {fileID: 1352266576}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2656,7 +2656,7 @@ GameObject:
   - component: {fileID: 1413914569}
   - component: {fileID: 1413914568}
   - component: {fileID: 1413914567}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2904,7 +2904,7 @@ GameObject:
   - component: {fileID: 1420050098}
   - component: {fileID: 1420050097}
   - component: {fileID: 1420050096}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3152,7 +3152,7 @@ GameObject:
   - component: {fileID: 1473711762}
   - component: {fileID: 1473711761}
   - component: {fileID: 1473711760}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3400,7 +3400,7 @@ GameObject:
   - component: {fileID: 1522280019}
   - component: {fileID: 1522280018}
   - component: {fileID: 1522280017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3647,7 +3647,7 @@ GameObject:
   - component: {fileID: 1557425111}
   - component: {fileID: 1557425112}
   - component: {fileID: 1557425113}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3763,7 +3763,7 @@ GameObject:
   - component: {fileID: 1568013950}
   - component: {fileID: 1568013951}
   - component: {fileID: 1568013952}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3880,7 +3880,7 @@ GameObject:
   - component: {fileID: 1719219762}
   - component: {fileID: 1719219761}
   - component: {fileID: 1719219760}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -4127,7 +4127,7 @@ GameObject:
   - component: {fileID: 1875920930}
   - component: {fileID: 1875920931}
   - component: {fileID: 1875920932}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4243,7 +4243,7 @@ GameObject:
   - component: {fileID: 1878530068}
   - component: {fileID: 1878530070}
   - component: {fileID: 1878530069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4355,7 +4355,7 @@ GameObject:
   - component: {fileID: 2016562776}
   - component: {fileID: 2016562777}
   - component: {fileID: 2016562778}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TallObstacle6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4472,7 +4472,7 @@ GameObject:
   - component: {fileID: 2025282460}
   - component: {fileID: 2025282459}
   - component: {fileID: 2025282458}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall4
   m_TagString: Level
   m_Icon: {fileID: 0}

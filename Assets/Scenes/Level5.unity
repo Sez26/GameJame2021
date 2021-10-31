@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 56769838}
   - component: {fileID: 56769840}
   - component: {fileID: 56769839}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 117938860}
   - component: {fileID: 117938859}
   - component: {fileID: 117938858}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 152510165}
   - component: {fileID: 152510167}
   - component: {fileID: 152510166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,7 +721,7 @@ GameObject:
   - component: {fileID: 426470640}
   - component: {fileID: 426470639}
   - component: {fileID: 426470638}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall4
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1026,7 +1026,7 @@ GameObject:
   - component: {fileID: 493252551}
   - component: {fileID: 493252550}
   - component: {fileID: 493252549}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 558095755}
   - component: {fileID: 558095754}
   - component: {fileID: 558095753}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1289,8 +1289,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558095751}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 32.2, z: 0}
-  m_LocalScale: {x: 2.6992877, y: 0.9948, z: 1}
+  m_LocalPosition: {x: 7, y: 32.9162, z: 0}
+  m_LocalScale: {x: 2.6992877, y: 1.064237, z: 1}
   m_Children: []
   m_Father: {fileID: 1211201371}
   m_RootOrder: 3
@@ -1578,7 +1578,7 @@ GameObject:
   - component: {fileID: 1111446254}
   - component: {fileID: 1111446256}
   - component: {fileID: 1111446255}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 1197566397}
   - component: {fileID: 1197566396}
   - component: {fileID: 1197566395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -1993,7 +1993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1211201371}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Level
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2100,7 +2100,7 @@ GameObject:
   - component: {fileID: 1288061357}
   - component: {fileID: 1288061356}
   - component: {fileID: 1288061355}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2405,7 +2405,7 @@ GameObject:
   - component: {fileID: 1657851807}
   - component: {fileID: 1657851806}
   - component: {fileID: 1657851805}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitWall1
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -2652,7 +2652,7 @@ GameObject:
   - component: {fileID: 1703955603}
   - component: {fileID: 1703955605}
   - component: {fileID: 1703955604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2765,7 +2765,7 @@ GameObject:
   - component: {fileID: 1759058952}
   - component: {fileID: 1759058951}
   - component: {fileID: 1759058950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EntranceWall3
   m_TagString: Level
   m_Icon: {fileID: 0}
@@ -3070,7 +3070,7 @@ GameObject:
   - component: {fileID: 1901338245}
   - component: {fileID: 1901338244}
   - component: {fileID: 1901338243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainWall2
   m_TagString: Level
   m_Icon: {fileID: 0}
