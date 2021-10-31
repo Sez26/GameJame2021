@@ -13,13 +13,16 @@ public class GuardBehaviour : MonoBehaviour
     public float speed = 2;
 
     private Rigidbody2D rb2d;
-    private Vector2 lookVector = Vector2.right;
+    public Vector2 lookVector = Vector2.right;
     private bool turning = true;
+    private bool chasing = false;
 
     public float viewAngle = 0.785f; // 45deg
     public float lookDist = 5f;
 
     public GameObject player = null;
+
+    private Vector2 pointOfInterest = Vector2.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -40,12 +43,23 @@ public class GuardBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        transform.GetChild(0).rotation = Quaternion.LookRotation(lookVector) 
+                                       * Quaternion.FromToRotation(Vector3.right, Vector3.forward);
     }
 
     private void FixedUpdate() {
         var move = lookVector * Time.fixedDeltaTime * speed;
         var target = (path[pathIndex] - rb2d.position).normalized;
+
+        if (CanSee(player)) {
+            pointOfInterest = player.GetComponent<Rigidbody2D>().position - rb2d.position;
+            chasing = true;
+        }
+
+        if (chasing) {
+            target = pointOfInterest.normalized;
+        }
+
 
         if (Vector2.Dot(lookVector, target) > 0.999) {
             turning = false;
@@ -60,6 +74,10 @@ public class GuardBehaviour : MonoBehaviour
             lookVector = new Vector2(look3.x, look3.y).normalized;
         } else {
             rb2d.MovePosition(rb2d.position + move);
+        }
+
+        if (chasing && this.rb2d.OverlapPoint(target)) {
+            chasing = false;
         }
 
         if (this.rb2d.OverlapPoint(path[pathIndex])) {
@@ -87,7 +105,7 @@ public class GuardBehaviour : MonoBehaviour
         var otherPos = obj.GetComponent<Rigidbody2D>().position;
         var diff = (otherPos - rb2d.position);
         var cosTheta = Vector2.Dot(diff.normalized, lookVector);
-        if (cosTheta >= Mathf.Cos(viewAngle) && (Vector2.Dot(diff, diff) <= lookDist*lookDist)) {
+        if ((Vector2.Dot(diff, diff) <= lookDist*lookDist) && cosTheta >= Mathf.Cos(viewAngle)) {
             var hit = Physics2D.Raycast(rb2d.position, diff.normalized, lookDist, layerMask);
             if (hit.collider == null) {
                 return true;

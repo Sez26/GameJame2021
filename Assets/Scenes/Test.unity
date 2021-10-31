@@ -564,6 +564,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guard
       objectReference: {fileID: 0}
+    - target: {fileID: 5947781845941238897, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
+      propertyPath: path.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947781845941238897, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
+      propertyPath: path.Array.data[0].x
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947781845941238897, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
+      propertyPath: path.Array.data[0].y
+      value: 6.43
+      objectReference: {fileID: 0}
     - target: {fileID: 5947781845941238898, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -607,6 +619,18 @@ PrefabInstance:
     - target: {fileID: 5947781845941238898, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947781847103148445, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947781847103148445, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947781847103148445, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5f3c9b8e528c2343a772105437e970f, type: 3}
