@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5947781845941238898}
   - component: {fileID: 5947781845941238897}
   - component: {fileID: 5947781845941238899}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: Guard
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -45,9 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6175004ed99b26d45830e8fdb4b3497f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path:
-  - {x: 1.28, y: 4.3}
-  - {x: 1.04, y: 8.15}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  path: []
   pathIndex: 0
   speed: 4
   viewAngle: 0.785
@@ -89,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5947781847103148444}
   - component: {fileID: 5947781847103148445}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: Square
   m_TagString: Enemy
   m_Icon: {fileID: 0}

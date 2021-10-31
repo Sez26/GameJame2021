@@ -5,6 +5,8 @@ using UnityEngine;
 public class GuardBehaviour : MonoBehaviour
 {
 
+    [SerializeField]
+    private LayerMask layerMask;
     public List<Vector2> path = new List<Vector2>();
     public int pathIndex = 0;
 
@@ -86,8 +88,12 @@ public class GuardBehaviour : MonoBehaviour
         var diff = (otherPos - rb2d.position);
         var cosTheta = Vector2.Dot(diff.normalized, lookVector);
         if (cosTheta >= Mathf.Cos(viewAngle) && (Vector2.Dot(diff, diff) <= lookDist*lookDist)) {
-            var hit = Physics2D.Raycast(rb2d.position, diff.normalized, lookDist);
-            if (hit.collider.gameObject.tag == "Player") {
+            var hit = Physics2D.Raycast(rb2d.position, diff.normalized, lookDist, layerMask);
+            if (hit.collider == null) {
+                return true;
+            }
+
+            if ((hit.point - rb2d.position).magnitude >= diff.magnitude) {
                 return true;
             }
         }
