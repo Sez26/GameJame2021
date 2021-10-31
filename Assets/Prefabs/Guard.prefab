@@ -48,9 +48,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
-  path:
-  - {x: 1.28, y: 4.3}
-  - {x: 1.04, y: 8.15}
+  path: []
   pathIndex: 0
   speed: 4
   viewAngle: 0.785
