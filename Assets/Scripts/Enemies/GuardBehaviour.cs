@@ -87,7 +87,7 @@ public class GuardBehaviour : MonoBehaviour
         var otherPos = obj.GetComponent<Rigidbody2D>().position;
         var diff = (otherPos - rb2d.position);
         var cosTheta = Vector2.Dot(diff.normalized, lookVector);
-        if (cosTheta >= Mathf.Cos(viewAngle) && (Vector2.Dot(diff, diff) <= lookDist*lookDist)) {
+        if ((Vector2.Dot(diff, diff) <= lookDist*lookDist) && cosTheta >= Mathf.Cos(viewAngle)) {
             var hit = Physics2D.Raycast(rb2d.position, diff.normalized, lookDist, layerMask);
             if (hit.collider == null) {
                 return true;
